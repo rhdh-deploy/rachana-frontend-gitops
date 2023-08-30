@@ -1,0 +1,15 @@
+app:
+  name: rachana-poi-map-app
+  namespace: rachana
+  cluster: .apps.a1jxqhzp.eastus2.aroapp.io
+
+git:
+  branch: main
+  repo: https://github.com/rhdh-deploy/rachana-frontend
+  org: rhdh-deploy
+  name: rachana-frontend
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: rachana/poi-map-app
+  tag: latest
